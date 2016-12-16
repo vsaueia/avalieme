@@ -1,16 +1,29 @@
 package br.com.digithobraisl.avalieme;
 
-public enum  PerguntaCompetencia {
+import java.util.HashMap;
+import java.util.Map;
 
-    PRINCIPIOS_AGEIS_E_LEAN("PRINCÍPIOS ÁGEIS E LEAN", "Conhece e pratica os 4 valores e os 12 princípios descritos no manifesto ágil e os 7 princípios " +
-            "Lean: Eliminar o desperdício, integrar qualidade, criar conhecimento, adiar compromissos, entregar rápido, respeitar as pessoas e otimizar o todo;");
+public class PerguntaCompetencia {
 
+    private static Map<String, String> map;
 
-    private String pergunta;
-    private String questao;
+    static {
+        map = new HashMap<>();
 
-    PerguntaCompetencia(String pergunta, String questao) {
-        this.pergunta = pergunta;
-        this.questao = questao;
+        map.put("Conhece e pratica os 4 valores e os 12 princípios descritos no manifesto ágil e os 7 princípios Lean: Eliminar o desperdício, integrar qualidade, criar conhecimento, adiar compromissos, entregar rápido, respeitar as pessoas e otimizar o todo;", "PRINCÍPIOS ÁGEIS E LEAN");
+        map.put("Compreende leitura e escrita além de ser capaz de seguir um diálogo em inglês.", "INGLÊS");
+        map.put("Consegue demonstrar para o cliente, para o time e outros interessados,  o valor atingindo com a solução desenvolvida, por exemplo showcases de interações, reuniões de alinhamentos e etc.", "DEMONSTRAÇÃO DE VALOR ALCANÇADO");
+        map.put("Conhece técnicas de facilitação com o objetivo de melhorar o desempenho de reuniões e momentos de elicitações de requisitos, tanto com o cliente como com o time .  ", "FACILITAÇÃO");
+        map.put("Consegue estabelecer uma visão compartilhada, estabelecer metas realistas, e descrever os benefícios que seu produto deve entregar. Busca escutar ativamente os outros e negociar para chegar a um acordo, gerindo adequadamente os conflitos de interesses e tentando chegar a resultados positivos para todas as partes envolvidas (cliente, time e empresa como um todo).", "VISÃO E LIDERANÇA");
+        map.put("Entende o ciclo de vida do produto com todas as suas fases e os problemas que ele se propõe a resolver. Sabe como o ciclo de vida ajuda a maximizar os benefícios que seu produto cria (por exemplo: metas, desempenho, estratégia de marketing e crescimento).", "CICLO DE VIDA DO PRODUTO");
+        map.put("Consegue identificar os usuários-alvo, clientes e segmento de mercado (benchmarking genérico); É capaz de indicar claramente a proposta de valor de seu produto, por que as pessoas gostariam de usar e comprá-lo e por que seu produto faz um ótimo trabalho na criação de valor para eles. Faz análise da concorrência para entender seus respectivos pontos fortes e fracos, conseguindo posicionar o produto. Realiza pesquisa de mercado necessária para testar suas idéias e suposições sobre o segmento de mercado e a proposição de valor, utilizando métodos qualitativos e quantitativos, entrevistas com problemas, observações diretas e empregando produto mínimo viável (MVPs); Consegue aproveitar os dados para tomar as decisões certas, usando ferramentas de análise, analisando os dados de forma eficaz e decidindo se você deve mudar sua estratégia ou se você deve perseverar e refiná-la.", "ESTRATÉGIA DE PRODUTO E PESQUISA DE MERCADO");
+        map.put("Consegue determinar o valor e o diferencial do produto  e qual problema ele pretende resolver. É capaz de formular e priorizar os objetivos de negócio , por exemplo, entrar num novo mercado , atender a uma receita ou lucro. Descreve como a proposta de valor do seu produto pode ser monetizada e a forma como o modelo de negócio funciona. Consegue determinar qual o perfil de potenciais clientes e formar parcerias estratégicas para estruturar o modelo de negócio. Estabelece uma relação próxima com o cliente, acompanhando como a empresa, a marca e o time se comunicam com ele.", "MODELO DE NEGÓCIO");
+        map.put("Cria e usa um roadmap de produto de forma a alinhar com o time o andamento e próximos passos do projeto. Formula metas realistas do produto, métricas e indicadores chave de desempenho (KPIs), datas de lançamento ou de prazos e características-chave (entregas ou resultados) . Consegue ser claro sobre a relação entre a estratégia de produto e o roadmap e sabe o momento de rever e alterar o processo, mantendo o cliente constantemente alinhado com os objetivos e prazos do roadmap.", "ROADMAP");
+        map.put("Consegue armazenar e gerenciar o product backlog, priorizá-los de forma eficaz, conciliando os interesses do cliente, da empresa e do time e selecionar metas para as iterações com o objetivo de desenvolver um produto sustentável.  Consegue usar ferramentas de análise para recuperar os dados relevantes e é capaz de analisá-los de forma eficaz. Consegue criar cenários, épicos, histórias de usuários, storyboards, diagramas de fluxo de trabalho e storymaps.", "PRODUCT BACKLOG");
+        map.put("É capaz de fazer a descrição dos usuários e clientes como personas, capturando a interação do usuário, o design visual, o dos aspectos não-funcionais de seu produto, juntamente com a ajuda da equipe. Faz entrevistas de soluções, testes de usabilidade, testes A / B e observação direta (imersão), para garantir que o produto esteja aderente às necessidades do usuário final e do negócio.", "UX");
+        map.put("Compreende como o negócio do cliente funciona, buscando conhecê-lo em sua totalidade. Consegue identificar e refinar as necessidades do cliente, com o objetivo de aprofundar seu conhecimento no problema, buscando a solução mais eficaz  e que atenda legislação vigente, colaborando com o cliente para atingir seus resultados.", "ANÁLISE DE NEGÓCIO");
+        map.put("- Conhece técnicas de facilitação e as aplica em reuniões para torná-las mais produtivas e com foco no objetivo.", "FACILITAÇÃO");
+        map.put("Diante de um conflito, consegue esclarecer as as percepções individuais, melhorar a comunicação. equilibrando as necessidades individuais e do grupo, beneficiando todos os envolvidos. Exercita a escuta ativa e sabe fazer as perguntas certas com o objetivo de mediar interesses, percepções, necessidades, expectativas diversas e manter o nível de motivação da equipe. Permite e fomenta discussões que ajudem a estabilizar e integrar relações interpessoais.", "RESOLUÇÃO DE CONFLITOS");
+        map.put("Aplica técnicas de team building para acelerar transição do time entre as fases de formação, objetivando alto desempenho. Ex: incentiva feedbacks, promove a criação de bons relacionamentos entre o time e o cliente.", "TEAM BUILDING");
     }
 }
