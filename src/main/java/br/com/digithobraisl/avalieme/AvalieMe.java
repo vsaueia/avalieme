@@ -1,6 +1,7 @@
 package br.com.digithobraisl.avalieme;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +14,7 @@ import java.util.List;
 @RestController
 public class AvalieMe {
 
+    @CrossOrigin(origins = "*")
     @RequestMapping("/avaliacao")
     public List<AvalieMeResponse> avaliacao(@RequestParam(value = "nome") String nome) throws IOException {
 
