@@ -46,7 +46,7 @@ public class BuscadorDeRespostaDeAutoAvaliacao {
         Map<String, String> answers = response.getAnswers();
         String quemRespondeu = answers.get(chaveDeQuemRespondeu).toUpperCase();
         String respondeuParaQuem = answers.get(chaveDeParaQuemRespondeu).toUpperCase();
-        return quemRespondeu.contains(nome.toUpperCase()) && (respondeuParaQuem.contains(nome.toUpperCase()) || respondeuParaQuem.contains(EU));
+        return quemRespondeu.equals(nome.toUpperCase()) && (respondeuParaQuem.contains(nome.toUpperCase()) || respondeuParaQuem.contains(EU));
     }
 
 }
