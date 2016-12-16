@@ -5,11 +5,16 @@ import java.util.List;
 public class AvalieMeResponse {
 
     private String formulario;
-    private List<Avaliacao> avaliacaos;
+    private List<Avaliacao> avaliacoes;
+    private List<String> pontosFortes;
+    private List<String> pontosDeMelhorias;
 
-    public AvalieMeResponse(String formulario, List<Avaliacao> avaliacaos) {
+
+    public AvalieMeResponse(String formulario, List<Avaliacao> avaliacoes, List<String> pontosFortes, List<String> pontosDeMelhorias) {
         this.formulario = formulario;
-        this.avaliacaos = avaliacaos;
+        this.avaliacoes = avaliacoes;
+        this.pontosFortes = pontosFortes;
+        this.pontosDeMelhorias = pontosDeMelhorias;
     }
 
     public String getFormulario() {
@@ -20,11 +25,27 @@ public class AvalieMeResponse {
         this.formulario = formulario;
     }
 
-    public List<Avaliacao> getAvaliacaos() {
-        return avaliacaos;
+    public List<Avaliacao> getAvaliacoes() {
+        return avaliacoes;
     }
 
-    public void setAvaliacaos(List<Avaliacao> avaliacaos) {
-        this.avaliacaos = avaliacaos;
+    public void setAvaliacoes(List<Avaliacao> avaliacoes) {
+        this.avaliacoes = avaliacoes;
+    }
+
+    public List<String> getPontosFortes() {
+        return pontosFortes;
+    }
+
+    public void setPontosFortes(List<String> pontosFortes) {
+        this.pontosFortes = pontosFortes;
+    }
+
+    public List<String> getPontosDeMelhorias() {
+        return pontosDeMelhorias;
+    }
+
+    public void setPontosDeMelhorias(List<String> pontosDeMelhorias) {
+        this.pontosDeMelhorias = pontosDeMelhorias;
     }
 }

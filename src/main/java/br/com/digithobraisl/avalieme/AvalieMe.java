@@ -21,13 +21,19 @@ public class AvalieMe {
         List<AvalieMeResponse> responses = new ArrayList<>();
 
         RestTemplate restTemplate = new RestTemplate();
-        String consumeJSONString = restTemplate.getForObject("https://api.typeform.com/v1/form/RJRIvz?key=e2091ac4b93b4bfd26494c50c97a0e3bd96d5cdb&completed=true", String.class);
+        String urlTypeformQuestionarioUm = "https://api.typeform.com/v1/form/RJRIvz?key=e2091ac4b93b4bfd26494c50c97a0e3bd96d5cdb&completed=true";
+        String consumeJSONString = restTemplate.getForObject(urlTypeformQuestionarioUm, String.class);
         TypeFormResponse typeFormResponse = new ObjectMapper().readValue(consumeJSONString, TypeFormResponse.class);
-        responses.add(new AvalieMeResponse("AVALIAÇÃO - DESENVOLVEDOR 1.2", new Conversor(typeFormResponse).obterResultados(nome)));
+        Conversor primeiroFormulario = new Conversor(typeFormResponse);
+        responses.add(new AvalieMeResponse("AVALIAÇÃO - DESENVOLVEDOR 1.2", primeiroFormulario.obterResultados(nome),
+                primeiroFormulario.obterPontosFortes(), primeiroFormulario.obterPontosDeMelhorias()));
 
-        consumeJSONString = restTemplate.getForObject("https://api.typeform.com/v1/form/RJRIvz?key=e2091ac4b93b4bfd26494c50c97a0e3bd96d5cdb&completed=true", String.class);
+        String urlTypeformQuestionarioDois = "https://api.typeform.com/v1/form/TfjnBY?key=e2091ac4b93b4bfd26494c50c97a0e3bd96d5cdb&completed=true";
+        consumeJSONString = restTemplate.getForObject(urlTypeformQuestionarioDois, String.class);
         typeFormResponse = new ObjectMapper().readValue(consumeJSONString, TypeFormResponse.class);
-        responses.add(new AvalieMeResponse("AVALIAÇÃO - DESENVOLVEDOR 1.3", new Conversor(typeFormResponse).obterResultados(nome)));
+        Conversor segundoFormulario = new Conversor(typeFormResponse);
+        responses.add(new AvalieMeResponse("AVALIAÇÃO - DESENVOLVEDOR 1.3", segundoFormulario.obterResultados(nome),
+                segundoFormulario.obterPontosFortes(), segundoFormulario.obterPontosDeMelhorias()));
 
         return responses;
     }

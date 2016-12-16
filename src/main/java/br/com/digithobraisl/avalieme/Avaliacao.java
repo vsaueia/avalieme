@@ -36,4 +36,6 @@ class Avaliacao {
     public void setTime(BigDecimal time) {
         this.time = time;
     }
+
+
 }

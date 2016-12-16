@@ -1,18 +1,27 @@
 package br.com.digithobraisl.avalieme;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Conversor {
     private final TypeFormResponse typeFormResponse;
+    private final String chaveDoPontoForte;
+    private final String chaveDoPontoDeMelhoria;
+
+    private String PONTOS_FORTES = "Quais os pontos fortes dessa pessoa?";
+    private String PONTOS_DE_MELHORIA = "Quais os pontos de melhoria dessa pessoa?";
+    private Response respostaDaAutoAvaliacao;
+    private List<Response> respostasDoTime;
 
 
     public Conversor(TypeFormResponse respostas) {
         this.typeFormResponse = respostas;
+        chaveDoPontoForte = respostas.getQuestions().stream().filter(question -> question.getQuestion()
+                .equals(PONTOS_FORTES)).map(Question::getId).findFirst().orElse("");
+        chaveDoPontoDeMelhoria = respostas.getQuestions().stream().filter(question -> question.getQuestion()
+                .equals(PONTOS_DE_MELHORIA)).map(Question::getId).findFirst().orElse("");
     }
 
     public List<Avaliacao> obterResultados(String avaliado) {
@@ -21,7 +30,7 @@ public class Conversor {
         List<Response> respostasDeAutoAvaliacao = BuscadorDeRespostaDeAutoAvaliacao.of(this.typeFormResponse).buscar(avaliado);
         if (!respostasDeAutoAvaliacao.isEmpty()) {
 
-            Response respostaDaAutoAvaliacao = respostasDeAutoAvaliacao.get(0);
+            respostaDaAutoAvaliacao = respostasDeAutoAvaliacao.get(0);
             Map<String, String> autoAvaliacao = respostaDaAutoAvaliacao.getAnswers();
 
             for (Question question : typeFormResponse.getQuestions()) {
@@ -34,7 +43,7 @@ public class Conversor {
                 }
             }
 
-            List<Response> respostasDoTime = BuscadorDeResposta.of(this.typeFormResponse).buscar(avaliado);
+            respostasDoTime = BuscadorDeResposta.of(this.typeFormResponse).buscar(avaliado);
             respostasDoTime.remove(respostaDaAutoAvaliacao);
             List<Map<String, String>> avaliacoesDoTime = respostasDoTime.stream().map(Response::getAnswers).collect(Collectors.toList());
 
@@ -72,5 +81,27 @@ public class Conversor {
         }
 
         return somatorioDaNota;
+    }
+
+    public List<String> obterPontosFortes() {
+
+        List<Response> respostas = new ArrayList<>(respostasDoTime);
+        respostas.add(respostaDaAutoAvaliacao);
+        List<String> pontosFortes = respostas.stream().map(response -> response.getAnswers().entrySet().stream())
+                .flatMap(entryStream -> entryStream.filter(entry -> entry.getKey().equals(chaveDoPontoForte)))
+                .map(entry -> entry.getValue())
+                .collect(Collectors.toList());
+        return pontosFortes;
+    }
+
+    public List<String> obterPontosDeMelhorias() {
+        List<Response> respostas = new ArrayList<>(respostasDoTime);
+        respostas.add(respostaDaAutoAvaliacao);
+        List<String> pontosDeMelhoria = respostas.stream().map(response -> response.getAnswers().entrySet().stream())
+                .flatMap(entryStream -> entryStream.filter(entry -> entry.getKey().equals(chaveDoPontoDeMelhoria)))
+                .map(entry -> entry.getValue())
+                .collect(Collectors.toList());
+
+        return pontosDeMelhoria;
     }
 }
