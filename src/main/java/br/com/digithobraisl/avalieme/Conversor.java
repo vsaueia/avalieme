@@ -53,7 +53,10 @@ public class Conversor {
                 if (somatorioDaNota.compareTo(BigDecimal.ZERO) > 0) {
                     BigDecimal quantidadeDeRespostas = quantidadeDeRespotas(avaliacoesDoTime, questao);
                     BigDecimal media = somatorioDaNota.divide(quantidadeDeRespostas, 0, BigDecimal.ROUND_CEILING);
-                    avaliacoes.get(question.getId()).setTime(media);
+                    Avaliacao avaliacao = avaliacoes.get(question.getId());
+                    if (avaliacao != null) {
+                        avaliacao.setTime(media);
+                    }
                 }
             }
         }
