@@ -17,4 +17,8 @@ public class Escala {
         map.put("Cria novos conhecimentos sobre o assunto, domina totalmente sua execução e é uma inspiração para a equipe.", 7);
     }
 
+    public static int nota(String resposta) {
+        return map.get(resposta) != null ? map.get(resposta) : 0;
+    }
+
 }
