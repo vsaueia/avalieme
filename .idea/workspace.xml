@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9327d93e-3a20-4671-bcdf-079c66948c88" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/BuscadorDeRespostaDeAutoAvaliacao.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/BuscadorDeRespostaDeAutoAvaliacao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Conversor.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Conversor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/AvalieMe.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/AvalieMe.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,35 +35,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Boot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Boot.java">
+      <file leaf-file-name="avalieme.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/avalieme.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TypeFormResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/TypeFormResponse.java">
+      <file leaf-file-name="AvalieMe.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/AvalieMe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="320">
+              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#413#414#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TypeFormApiConsumer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/TypeFormApiConsumer.java">
+      <file leaf-file-name="BuscadorDeRespostaDeAutoAvaliacao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/BuscadorDeRespostaDeAutoAvaliacao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="55" />
+            <state relative-caret-position="278">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,95 +72,12 @@
       <file leaf-file-name="Conversor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Conversor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state relative-caret-position="406">
+              <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#334#335#0" expanded="true" />
                 <element signature="e#383#384#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AvalieMe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/AvalieMe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Avaliacao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Avaliacao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Escala.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Escala.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1107#1108#0" expanded="true" />
-                <element signature="e#1179#1180#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Question.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-202">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#302#303#0" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#480#481#0" expanded="true" />
-                <element signature="e#520#521#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#584#585#0" expanded="true" />
-                <element signature="e#630#631#0" expanded="true" />
-                <element signature="e#670#671#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuscadorDeRespostaDeAutoAvaliacao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/BuscadorDeRespostaDeAutoAvaliacao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="938">
-              <caret line="48" column="15" lean-forward="false" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="141" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PerguntaCompetencia.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/PerguntaCompetencia.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="95" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -221,10 +135,10 @@
         <option value="$PROJECT_DIR$/src/test/java/br/com/digithobraisl/avalieme/RepostaDoTypeFormTeste.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/TypeFormApiConsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Escala.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/AvalieMe.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Boot.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Avaliacao.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/BuscadorDeRespostaDeAutoAvaliacao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/AvalieMe.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Conversor.java" />
       </list>
     </option>
@@ -904,7 +818,7 @@
       <option name="presentableId" value="Default" />
       <updated>1481889516480</updated>
       <workItem from="1481889517669" duration="1091000" />
-      <workItem from="1481890743318" duration="18095000" />
+      <workItem from="1481890743318" duration="19172000" />
     </task>
     <task id="LOCAL-00001" summary="Exemplo de consumir uma url">
       <created>1481890398527</created>
@@ -934,7 +848,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481910153378</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Remocao da autoavaliacao das respostas do time">
+      <created>1481910648878</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1481910648878</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -970,7 +891,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19186000" />
+    <option name="totallyTimeSpent" value="20263000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1050,31 +971,20 @@
     <MESSAGE value="Inicio do mepamento da tabulacao" />
     <MESSAGE value="Mapas das perguntas e repostas e valores das respostas" />
     <MESSAGE value="Calculo da media e API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calculo da media e API" />
+    <MESSAGE value="Remocao da autoavaliacao das respostas do time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remocao da autoavaliacao das respostas do time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Conversor.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Conversor.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Conversor.java</url>
           <line>36</line>
           <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1252,18 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/TypeFormResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Question.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-202">
@@ -1295,49 +1193,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/TypeFormApiConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Boot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Avaliacao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2">
           <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/AvalieMe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/BuscadorDeRespostaDeAutoAvaliacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="938">
-          <caret line="48" column="15" lean-forward="false" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="141" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1353,10 +1213,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/jre/lib/rt.jar!/sun/nio/ch/WindowsSelectorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/TypeFormApiConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="11" column="55" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/TypeFormResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Boot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avalieme.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/BuscadorDeRespostaDeAutoAvaliacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/AvalieMe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/digithobraisl/avalieme/Conversor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state relative-caret-position="406">
+          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#334#335#0" expanded="true" />
