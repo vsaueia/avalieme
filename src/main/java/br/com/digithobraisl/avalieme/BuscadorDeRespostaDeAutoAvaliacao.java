@@ -44,8 +44,8 @@ public class BuscadorDeRespostaDeAutoAvaliacao {
 
     private boolean existeRespostaPara(String nome, Response response) {
         Map<String, String> answers = response.getAnswers();
-        String quemRespondeu = answers.get(chaveDeQuemRespondeu).toUpperCase();
-        String respondeuParaQuem = answers.get(chaveDeParaQuemRespondeu).toUpperCase();
+        String quemRespondeu = answers.get(chaveDeQuemRespondeu).trim().toUpperCase();
+        String respondeuParaQuem = answers.get(chaveDeParaQuemRespondeu).trim().toUpperCase();
         return quemRespondeu.equals(nome.toUpperCase()) && (respondeuParaQuem.contains(nome.toUpperCase()) || respondeuParaQuem.contains(EU));
     }
 
