@@ -107,4 +107,8 @@ public class Conversor {
 
         return pontosDeMelhoria;
     }
+
+    public boolean temResposta() {
+        return respostasDoTime != null;
+    }
 }
