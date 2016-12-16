@@ -33,8 +33,10 @@ public class AvalieMe {
         typeFormResponse = new ObjectMapper().readValue(consumeJSONString, TypeFormResponse.class);
         Conversor segundoFormulario = new Conversor(typeFormResponse);
 
+        List<Avaliacao> avaliacoes = segundoFormulario.obterResultados(nome);
+
         if(segundoFormulario.temResposta()){
-            responses.add(new AvalieMeResponse("AVALIAÇÃO - DESENVOLVEDOR 1.3", segundoFormulario.obterResultados(nome),
+            responses.add(new AvalieMeResponse("AVALIAÇÃO - DESENVOLVEDOR 1.3", avaliacoes,
                     segundoFormulario.obterPontosFortes(), segundoFormulario.obterPontosDeMelhorias()));
         }
 
